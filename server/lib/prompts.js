@@ -7,9 +7,9 @@
 
 const EXAM_SHAPE = `{
   "hoeren": {
-    "teil1": [ { "audioScript": "<2-4 lines of A1 German; a short dialogue or announcement; use 'Sprecher 1:'/'Sprecher 2:' for dialogues>", "question": "<question in German>", "options": ["a", "b", "c"], "answer": 0 } ],
-    "teil2": [ { "audioScript": "<a short public announcement (Durchsage) in A1 German>", "statement": "<a statement in German to judge true/false>", "answer": true } ],
-    "teil3": [ { "audioScript": "<a short A1 dialogue>", "question": "<question in German>", "options": ["a", "b", "c"], "answer": 2 } ]
+    "teil1": [ { "audioScript": "<ONLY the spoken dialogue/announcement (2-4 lines A1 German, e.g. 'Sprecher 1: …\\nSprecher 2: …'). Do NOT include the question text and do NOT name or list the a/b/c options. The answer must be inferable from the conversation.>", "question": "<question in German, shown on screen only>", "options": ["a", "b", "c"], "answer": 0 } ],
+    "teil2": [ { "audioScript": "<ONLY the spoken announcement (Durchsage) in A1 German. Do NOT read the statement aloud.>", "statement": "<a statement in German to judge true/false, shown on screen only>", "answer": true } ],
+    "teil3": [ { "audioScript": "<ONLY the spoken A1 dialogue. Do NOT include the question text and do NOT name or list the a/b/c options.>", "question": "<question in German, shown on screen only>", "options": ["a", "b", "c"], "answer": 2 } ]
   },
   "lesen": {
     "teil1": [ { "text": "<a very short A1 email or note in German>", "statement": "<statement in German>", "answer": true } ],
@@ -53,7 +53,10 @@ Anforderungen an die Anzahl:
 
 Wichtig:
 - Alle Inhalte auf Deutsch, Niveau A1.
-- "audioScript" ist der gesprochene Text, der den Lernenden vorgelesen wird (er sieht ihn NICHT). Halte ihn kurz und natürlich.
+- "audioScript" ist NUR das Hörmaterial – ein natürliches Gespräch oder eine Durchsage, das vorgelesen wird.
+- GANZ WICHTIG: Der "audioScript" darf die Frage NICHT wiederholen und die Antwortoptionen (a/b/c bzw. deren Werte wie "8:15 Uhr") NICHT vorlesen oder aufzählen. Frage und Optionen liest die Person nur auf dem Bildschirm; im Audio hört sie ausschließlich das Gespräch/die Durchsage.
+- Beispiel richtig (audioScript für die Frage "Wie spät ist es?"): "Sprecher 1: Entschuldigung, wie spät ist es? Sprecher 2: Es ist halb neun." (NICHT die Uhrzeiten 8:15/8:30/8:45 aufzählen.)
+- ZUSAMMENHANG: audioScript, Frage, Optionen und answer müssen exakt zueinander passen. Das audioScript muss die Information enthalten, mit der genau EINE Option (die richtige) eindeutig stimmt; die anderen Optionen sind plausible, aber im Audio NICHT genannte Ablenker. Prüfe vor der Ausgabe, dass die mit "answer" markierte Option wirklich der im audioScript genannten Information entspricht.
 - Die Fragen müssen eindeutig aus dem audioScript / Text beantwortbar sein.
 - Mische die richtigen Antworten (nicht immer dieselbe Option / immer true).
 
