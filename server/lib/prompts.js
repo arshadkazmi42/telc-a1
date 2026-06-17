@@ -53,6 +53,8 @@ Anforderungen an die Anzahl:
 
 Wichtig:
 - Alle Inhalte auf Deutsch, Niveau A1.
+- schreiben.teil2 ist eine SEHR kurze A1-Mitteilung: jeder der 3 Leitpunkte muss mit EINEM einfachen Satz beantwortbar sein (Gesamterwartung ca. 20–30 Wörter). Verwende einfache Alltagsanlässe (Einladung, Termin, Dank, Verspätung). KEINE komplexen/formellen oder argumentativen Aufgaben (das wäre B1).
+- schreiben.teil1 ist ein einfaches Formular mit persönlichen Daten (z. B. Name, Adresse, Geburtsdatum, Telefon).
 - "audioScript" ist NUR das Hörmaterial – ein natürliches Gespräch oder eine Durchsage, das vorgelesen wird.
 - GANZ WICHTIG: Der "audioScript" darf die Frage NICHT wiederholen und die Antwortoptionen (a/b/c bzw. deren Werte wie "8:15 Uhr") NICHT vorlesen oder aufzählen. Frage und Optionen liest die Person nur auf dem Bildschirm; im Audio hört sie ausschließlich das Gespräch/die Durchsage.
 - Beispiel richtig (audioScript für die Frage "Wie spät ist es?"): "Sprecher 1: Entschuldigung, wie spät ist es? Sprecher 2: Es ist halb neun." (NICHT die Uhrzeiten 8:15/8:30/8:45 aufzählen.)

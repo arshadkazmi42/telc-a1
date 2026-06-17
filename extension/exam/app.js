@@ -381,6 +381,7 @@ SCREENS.schreiben = {
         <h3>Teil 2 — Eine kurze Mitteilung schreiben</h3>
         <p class="scenario">${esc(t2.scenario)}</p>
         <ul class="points">${(t2.points || []).map((p) => `<li>${esc(p)}</li>`).join('')}</ul>
+        <p class="hint">Zu jedem Punkt ein bis zwei einfache Sätze genügen — insgesamt circa 20–30 Wörter (A1).</p>
         <textarea id="t2-text" rows="7" placeholder="Schreiben Sie hier …">${esc(state.answers.schreiben.teil2 || '')}</textarea>
 
         <div class="nav"><button id="next-btn" class="btn btn-primary">Weiter zu Sprechen</button></div>
