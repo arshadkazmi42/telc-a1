@@ -62,6 +62,19 @@ Wichtig:
 - Die Fragen müssen eindeutig aus dem audioScript / Text beantwortbar sein.
 - Mische die richtigen Antworten (nicht immer dieselbe Option / immer true).
 
+SCHWIERIGKEIT & AUTHENTIZITÄT (SEHR WICHTIG – die Aufgaben sollen so anspruchsvoll und realistisch sein wie in einer echten telc-/Goethe-A1-Prüfung, NICHT trivial):
+- Ablenker (falsche Optionen) müssen PLAUSIBEL und nah an der richtigen Antwort sein: ähnliche Uhrzeiten (9:15 / 9:50 / 19:15), ähnliche Orte, ähnliche Gegenstände, ähnliche Preise. Die richtige Antwort darf nicht die offensichtlich einzig sinnvolle sein.
+- Hören: Im Gespräch wird oft zuerst eine FALSCHE Information genannt und dann korrigiert ("Treffen wir uns um sieben? – Nein, lieber um halb acht.") oder es kommen mehrere Zahlen/Zeiten/Namen vor. Die Antwort ergibt sich erst aus genauem Zuhören, nicht aus dem ersten gehörten Wort.
+- Richtig/Falsch-Aufgaben (Hören Teil 2, Lesen Teil 1 & 3): Die Aussage PARAPHRASIERT den Inhalt mit ANDEREN Wörtern (keine wörtliche Wiederholung), sodass man den Sinn verstehen muss und nicht nur Wörter wiedererkennt.
+- Lesen Teil 2: optionA und optionB sollen sich stark ähneln (z. B. zwei Restaurants, zwei Kurse, zwei Geschäfte), sodass man Details (Öffnungszeiten, Preis, Angebot, Wochentag) genau vergleichen muss. Manchmal passt nur eine wegen EINES Details.
+- Texte/Dialoge natürlicher und etwas länger: Hörtexte 3–5 Sätze, Lesetexte 2–4 Sätze, mit realistischem Alltagskontext (Bahnhof, Arztpraxis, Supermarkt, Nachbarn, Kurs, Wohnung).
+- Nutze den VOLLEN A1-Wortschatz (nicht nur die allereinfachsten Wörter). Grammatik bleibt A1: Präsens, einfaches Perfekt (haben/sein), Modalverben, einfache Nebensätze mit "weil"/"dass" sind erlaubt.
+
+STIL-REFERENZ (nur als Niveau-/Schwierigkeitsbeispiel – NICHT kopieren, erfinde eigene Inhalte mit dem Seed):
+- Hören Teil 1 (mit Korrektur als Falle): audioScript "Sprecher 1: Treffen wir uns um sieben vor dem Kino? Sprecher 2: Um sieben schaffe ich es nicht. Geht halb acht? Sprecher 1: Ja, halb acht passt." | question "Wann treffen sich die beiden?" | options ["um 7:00 Uhr","um 7:30 Uhr","um 8:00 Uhr"] | answer 1
+- Lesen Teil 2 (ähnliche Anzeigen, ein entscheidendes Detail): situation "Sie möchten am Sonntag mit Ihren Kindern schwimmen gehen." | optionA "Schwimmbad Aqua: Mo–Fr 9–20 Uhr, am Wochenende geschlossen." | optionB "Hallenbad Welle: täglich 8–22 Uhr, sonntags Familientag mit Ermäßigung für Kinder." | answer "b"
+- Lesen Teil 1 (paraphrasierte Aussage): text "Hallo Tom, ich komme heute später, mein Bus hatte Verspätung. Wir sehen uns um 18 Uhr. Lisa" | statement "Lisa kommt pünktlich." | answer false
+
 Gib das JSON GENAU in dieser Struktur zurück (Arrays mit der geforderten Länge):
 ${EXAM_SHAPE}`;
 
