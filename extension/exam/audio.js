@@ -105,11 +105,10 @@ export async function playListeningItem(script, { rate = 0.8, onStatus, signal }
 
   for (let round = 1; round <= 2; round++) {
     if (aborted()) return;
-    onStatus && onStatus(`Wird abgespielt … (${round}/2)`);
-    if (round === 1) {
-      await speakOnce('Sie hören den Text jetzt. Sie hören den Text zweimal.', { rate, voice: voices[0] });
-      await wait(500);
-    }
+    // The "you hear it twice" hint is shown on screen only — not spoken — so the
+    // audio is just the dialogue itself.
+    onStatus && onStatus(`Wird abgespielt … (${round}/2) · Sie hören den Text zweimal`);
+    if (round === 1) await wait(400); // short lead-in before the first play
     if (aborted()) return;
     await speakTurns(script, { rate, voices, signal });
     if (round === 1) {
