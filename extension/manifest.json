@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "telc Deutsch A1 — Mock Exam",
+  "version": "0.1.0",
+  "description": "A realistic telc Deutsch A1 mock exam: listening (generated audio), reading, writing, and recorded speaking with AI feedback. New questions every time.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1/*",
+    "http://localhost/*"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Open telc A1 Mock Exam"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "telc-a1",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension + local AI server for a realistic telc Deutsch A1 mock exam (listening with generated audio, reading, writing, and recorded speaking with AI feedback).",
+  "scripts": {
+    "start": "node scripts/start.js",
+    "dev": "node server/index.js"
+  },
+  "workspaces": [
+    "server"
+  ]
+}
